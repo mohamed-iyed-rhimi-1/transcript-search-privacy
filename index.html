@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the Transcript Search for YouTube Chrome extension.">
+<title>Transcript Search Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>body{margin:0}</style>
+<style>
+/* Layout: one reading column, a summary panel up top, a data-flow table in the middle. */
+:root {
+  --bg: #f7f8fa; --surface: #ffffff; --fg: #1b2230; --muted: #5a6475;
+  --line: #dde2ea; --accent: #0f6f6a; --accent-soft: #e3f2f0;
+  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12161d; --surface: #1a2029; --fg: #e6eaf0; --muted: #9aa4b4;
+  --line: #2c3442; --accent: #5cc7bd; --accent-soft: #1b3533; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12161d; --surface: #1a2029; --fg: #e6eaf0; --muted: #9aa4b4;
+  --line: #2c3442; --accent: #5cc7bd; --accent-soft: #1b3533; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--font-body); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-block: 48px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 36px; }
+header { display: flex; flex-direction: column; gap: 6px; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 600 clamp(28px, 5vw, 38px)/1.15 var(--font-display); margin: 0; text-wrap: balance; }
+.updated { color: var(--muted); font-size: 14px; margin: 0; }
+h2 { font: 600 21px/1.3 var(--font-display); margin: 0 0 10px; text-wrap: balance; }
+section p, section ul { margin: 0 0 12px; }
+section > :last-child { margin-bottom: 0; }
+ul { padding-left: 1.2em; }
+li + li { margin-top: 6px; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+code { font: 13.5px var(--font-mono); background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
+.summary { background: var(--accent-soft); border-radius: 10px; padding: 20px 22px; }
+.summary p { margin: 0; font-size: 17px; }
+.summary strong { color: var(--accent); }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+tr:last-child td { border-bottom: 0; }
+th { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+td:first-child { font-weight: 600; white-space: nowrap; }
+.pill { display: inline-block; font-size: 12px; font-weight: 500; padding: 1px 8px; border-radius: 99px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.pill.on { border-color: var(--accent); color: var(--accent); }
+dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 10px 18px; }
+dt { font-weight: 600; }
+dd { margin: 0; color: var(--fg); min-width: 0; }
+@media (max-width: 520px) { dl { grid-template-columns: 1fr; gap: 2px; } dd { margin-bottom: 10px; } }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 18px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Transcript Search for YouTube</span>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated November 16, 2026</p>
+  </header>
+
+  <div class="summary">
+    <p><strong>In short:</strong> the extension does not collect, sell, or share personal data. It has no accounts, analytics, ads, or tracking. Your searches never leave your computer.</p>
+  </div>
+
+  <section>
+    <h2>What the extension does</h2>
+    <p>Transcript Search for YouTube finds every place a word or phrase is said in the transcript of a YouTube video, a list of videos, or a playlist, and links to each moment. This policy explains what data it handles and where that data goes.</p>
+  </section>
+
+  <section>
+    <h2>What it never collects</h2>
+    <ul>
+      <li>Your search terms. Searching happens entirely inside your browser.</li>
+      <li>Your browsing history. The extension acts only on YouTube pages and on the video or playlist links you give it.</li>
+      <li>Your name, email address, location, or any other personal information.</li>
+      <li>Analytics, usage statistics, or crash reports.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Data kept on your computer</h2>
+    <p>These stay in your browser's local storage and are never sent to the developer.</p>
+    <dl>
+      <dt>Settings</dt>
+      <dd>Transcript language, the whole-word option, and, if you enter them, a transcript server address and token and a TranscriptAPI.com key.</dd>
+      <dt>Transcript cache</dt>
+      <dd>Transcripts and playlist lists already downloaded, so repeat searches are instant. Transcripts expire after 30 days, playlists after 6 hours.</dd>
+    </dl>
+    <p style="margin-top:12px">Delete all of it at any time with <strong>Settings → Clear cache</strong>, or by removing the extension.</p>
+  </section>
+
+  <section>
+    <h2>Where requests go</h2>
+    <p>Each request carries only what is needed to fetch a transcript: a video or playlist ID and, sometimes, a language code. The extension makes no other network requests.</p>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Destination</th><th>When</th><th>What is sent</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>YouTube<br><span class="pill on">always</span></td>
+            <td>When you search a video or playlist</td>
+            <td>Video or playlist ID and language code, to get video details, captions, playlist contents and thumbnails. These are the same requests the YouTube website makes.</td>
+          </tr>
+          <tr>
+            <td>TranscriptAPI.com<br><span class="pill">off by default</span></td>
+            <td>Only if you enter your own key, and only when YouTube gives no transcript</td>
+            <td>Your key and the video ID.</td>
+          </tr>
+          <tr>
+            <td>Transcript server<br><span class="pill">off by default</span></td>
+            <td>Only if you enter a server address</td>
+            <td>Video IDs and language code. It may also upload transcripts it downloaded itself (the video's spoken words and title, nothing about you) so others on that server don't download them again. Search terms are never sent.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:12px">If YouTube refuses a caption request, the extension may repeat it from inside your open YouTube tab, where YouTube treats it as part of your own session. The extension does not read, store, or send your YouTube cookies or account details.</p>
+    <p>Each service's own policy applies to requests sent to it: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://transcriptapi.com">TranscriptAPI.com</a>. Whoever runs a transcript server you configure is responsible for that server.</p>
+  </section>
+
+  <section>
+    <h2>Permissions</h2>
+    <dl>
+      <dt>Side panel</dt>
+      <dd>Shows the search panel next to the page.</dd>
+      <dt>Storage</dt>
+      <dd>Saves your settings.</dd>
+      <dt>Scripting</dt>
+      <dd>When you click a result, jumps the YouTube player to that moment. Also runs the caption request in your YouTube tab, as described above.</dd>
+      <dt>Declarative Net Request</dt>
+      <dd>Sets the <code>Origin</code> and <code>Referer</code> headers on the extension's own requests to YouTube so YouTube accepts them. It does not block, read, or change any other traffic.</dd>
+      <dt>Host access</dt>
+      <dd><code>youtube.com</code> and <code>transcriptapi.com</code>, for the requests above.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Sharing and selling data</h2>
+    <p>The developer receives no data from the extension, so there is nothing to sell or share. The extension's use of data follows the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>The extension is not directed at children and does not knowingly collect data from anyone.</p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted here with a new date. Changes that affect how data is used will also be noted in the extension's release notes.</p>
+  </section>
+
+  <footer>Questions about this policy: <span style="user-select:all;color:var(--fg)">mohamediyedrhimita@gmail.com</span></footer>
+</div>
+</body>
+</html>
