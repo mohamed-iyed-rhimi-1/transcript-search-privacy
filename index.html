@@ -64,11 +64,11 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
   <header>
     <span class="eyebrow">Transcript Search for YouTube</span>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated November 16, 2026</p>
+    <p class="updated">Last updated November 22, 2026</p>
   </header>
 
   <div class="summary">
-    <p><strong>In short:</strong> the extension does not collect, sell, or share personal data. It has no accounts, analytics, ads, or tracking. Your searches never leave your computer.</p>
+    <p><strong>In short:</strong> the extension does not collect, sell, or share personal data. It has no accounts, analytics, ads, or tracking. Your searches never leave your computer. When YouTube has no transcript for a video, only that video's ID is sent to our transcription server, and you can switch this off.</p>
   </div>
 
   <section>
@@ -91,7 +91,7 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
     <p>These stay in your browser's local storage and are never sent to the developer.</p>
     <dl>
       <dt>Settings</dt>
-      <dd>Transcript language, the whole-word option, and, if you enter them, a transcript server address and token and a TranscriptAPI.com key.</dd>
+      <dd>Transcript language, the whole-word option, whether the backup server is on, and, if you enter them, a transcript server address and token and a TranscriptAPI.com key.</dd>
       <dt>Transcript cache</dt>
       <dd>Transcripts and playlist lists already downloaded, so repeat searches are instant. Transcripts expire after 30 days, playlists after 6 hours.</dd>
     </dl>
@@ -100,7 +100,7 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
 
   <section>
     <h2>Where requests go</h2>
-    <p>Each request carries only what is needed to fetch a transcript: a video or playlist ID and, sometimes, a language code. The extension makes no other network requests.</p>
+    <p>Each request carries only what is needed to fetch a transcript: a video or playlist ID and, sometimes, a language code. The extension makes no other network requests. As with any website, each service also sees your IP address.</p>
     <div class="table-scroll">
       <table>
         <thead><tr><th>Destination</th><th>When</th><th>What is sent</th></tr></thead>
@@ -111,13 +111,23 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
             <td>Video or playlist ID and language code, to get video details, captions, playlist contents and thumbnails. These are the same requests the YouTube website makes.</td>
           </tr>
           <tr>
+            <td>Backup transcription server<br><span class="pill on">on, can be switched off</span></td>
+            <td>Only when YouTube has no captions for a video, or blocks caption downloads from your network</td>
+            <td>Video IDs and language code. The server, run by the developer, returns a saved transcript or makes one with AI speech recognition. Your IP address is used only to apply hourly usage limits; it is kept in memory only, deleted within about an hour, and never logged or stored. Transcripts are saved on the server and reused for other users; they contain the video's spoken words and title, nothing about you. Turn it off in <strong>Settings → Use the backup transcription server</strong>.</td>
+          </tr>
+          <tr>
+            <td>GitHub Pages<br><span class="pill on">with the backup server</span></td>
+            <td>Before using the backup server, at most every 10 minutes</td>
+            <td>Nothing. The extension downloads a small file that contains the backup server's current address.</td>
+          </tr>
+          <tr>
             <td>TranscriptAPI.com<br><span class="pill">off by default</span></td>
             <td>Only if you enter your own key, and only when YouTube gives no transcript</td>
             <td>Your key and the video ID.</td>
           </tr>
           <tr>
-            <td>Transcript server<br><span class="pill">off by default</span></td>
-            <td>Only if you enter a server address</td>
+            <td>Your own transcript server<br><span class="pill">off by default</span></td>
+            <td>Only if you enter a server address (the backup server is then not used)</td>
             <td>Video IDs and language code. It may also upload transcripts it downloaded itself (the video's spoken words and title, nothing about you) so others on that server don't download them again. Search terms are never sent.</td>
           </tr>
         </tbody>
@@ -145,7 +155,7 @@ footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line)
 
   <section>
     <h2>Sharing and selling data</h2>
-    <p>The developer receives no data from the extension, so there is nothing to sell or share. The extension's use of data follows the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
+    <p>The only data the developer receives is the video IDs sent to the backup transcription server, as described above. They are used only to provide transcripts, and are never sold, shared, or used for advertising, profiling, or any other purpose. The extension's use of data follows the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
   </section>
 
   <section>
